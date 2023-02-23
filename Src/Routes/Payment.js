@@ -63,7 +63,7 @@ router.get("/success", async (req, res) => {
       } catch (error) {
         res.status(400).send(`Error ${error}`);
       }
-    } else return res.redirect(`http://localhost:5173/shopping`);
+    } else return res.redirect(`http://localhost:5173/shopping`); 
   } catch (error) {
     res.status(500).send({ mensage: `${error}` });
   }
